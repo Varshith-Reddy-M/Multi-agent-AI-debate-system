@@ -40,7 +40,8 @@ def run_agent_stream(prompt, stream_output=True):
                         "content": prompt
                     }
                 ],
-                stream=True
+                stream=True,
+                temperature=0
             )
 
             for chunk in stream:
