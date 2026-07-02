@@ -24,6 +24,19 @@ with gr.Blocks() as app:
     gr.Markdown(
         "Multi-Agent AI Debate System with Autonomous Judging"
     )
+    gr.Markdown("""
+⚠ **Important Notice**
+
+This application currently runs on **free-tier LLM APIs via OpenRouter**.
+
+Due to provider limitations, you may occasionally experience:
+
+- Slow responses  
+- API rate limit errors  
+- Temporary model unavailability  
+
+If a debate fails, please retry after some time.
+""")
 
 
     topic = gr.Textbox(

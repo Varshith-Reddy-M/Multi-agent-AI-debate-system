@@ -1,70 +1,178 @@
 ---
 title: AI Debate Arena
 emoji: 🤖
-colorFrom: blue
-colorTo: purple
 sdk: gradio
 sdk_version: "5.38.0"
 app_file: app.py
-pinned: false
 ---
 
 # AI Debate Arena
 
-A Multi-Agent AI Debate System where autonomous AI agents debate controversial topics, independent AI judges evaluate the arguments, and a final consensus engine determines the winner.
+A **Multi-Agent AI Debate System** where autonomous AI agents debate controversial topics, specialized judge agents independently evaluate the debate, and a consensus engine determines the final winner.
 
-## Features
+## Live Demo
 
-- PRO Agent argues in favor of the topic  
-- ANTI Agent argues against the topic  
-- 4-round autonomous debate simulation  
-- Logic Judge evaluates reasoning consistency  
-- Evidence Judge checks factual strength  
-- Practicality Judge evaluates real-world feasibility  
-- Consensus voting system decides final winner  
-- Debate Analyzer summarizes strengths and weaknesses  
+🚀 **Try the deployed app here**
 
-## Tech Stack
+Hugging Face Demo:  
+[Demo](https://varshithreddym-ai-debate.hf.space)
+
+---
+
+# Project Architecture
+
+The system simulates a structured debate between autonomous AI agents.
+
+```text
+User enters debate topic
+        ↓
+PRO Agent generates argument
+        ↓
+ANTI Agent rebuts
+        ↓
+PRO Agent counter argues
+        ↓
+ANTI Agent final rebuttal
+        ↓
+Logic Judge evaluates reasoning
+Evidence Judge checks factual strength
+Practicality Judge checks feasibility
+        ↓
+Consensus voting engine determines winner
+        ↓
+Debate Analyzer summarizes strengths and weaknesses
+```
+
+---
+
+# Features
+
+- Autonomous PRO debating agent  
+- Autonomous ANTI debating agent  
+- Multi-round debate simulation  
+- Independent Logic Judge  
+- Independent Evidence Judge  
+- Independent Practicality Judge  
+- Final consensus voting engine  
+- Debate analyzer for final reasoning breakdown  
+- Public cloud deployment with web UI  
+
+---
+
+# Tech Stack
+
+## Backend
 
 - Python  
-- Gradio  
 - OpenRouter API  
-- Multi-Agent LLM Orchestration  
+- OpenAI Python SDK  
+
+## Frontend
+
+- Gradio  
+
+## AI System Design
+
+- Multi-Agent Orchestration  
+- Adversarial Reasoning  
 - Autonomous Evaluation Pipeline  
+- Consensus Voting Architecture  
 
-## Example Workflow
+## Deployment
 
-User enters topic
+- Hugging Face Spaces  
+- Git + GitHub Version Control  
 
-↓  
+---
 
-PRO Agent argues  
+# Installation
 
-↓  
+Clone repository
 
-ANTI Agent rebuts  
+```bash
+git clone https://github.com/Varshith-Reddy-M/Multi-agent-AI-debate-system.git
+```
 
-↓  
+Move into project
 
-4 rounds of debate  
+```bash
+cd Multi-agent-AI-debate-system
+```
 
-↓  
+Install dependencies
 
-3 AI Judges evaluate independently  
+```bash
+pip install -r requirements.txt
+```
 
-↓  
+---
 
-Consensus voting decides winner  
+# Running Locally
 
-↓  
+Run application
 
-Debate Analyzer provides final breakdown  
+```bash
+python app.py
+```
 
-## Example Topics
+or
+
+```bash
+python main.py
+```
+
+depending on your entrypoint.
+
+---
+
+# Example Debate Topics
 
 - Should AI replace software engineers?  
 - Should college degrees matter for hiring?  
 - Is remote work better than office work?  
 - Should social media be regulated?  
+- Should AGI development be slowed down?  
+
+---
+
+# Important Notice
+
+⚠ This application currently uses **free-tier LLM APIs** through OpenRouter.
+
+Due to provider limitations, users may occasionally experience:
+
+- High latency  
+- API rate limit errors  
+- Temporary provider outages  
+- Failed debate generation in rare cases  
+
+If this happens, retry after some time.
+
+---
+
+# Future Improvements
+
+- Real-time streaming token generation in UI  
+- Parallel judge execution for lower latency  
+- PDF export of debate transcript  
+- Debate history storage database  
+- Multi-model comparison mode  
+- User accounts and saved debates  
+
+---
+
+# Why this project matters
+
+This project demonstrates practical engineering skills in:
+
+- Multi-Agent AI Systems  
+- LLM Orchestration  
+- Prompt Engineering  
+- API Integration  
+- Cloud Deployment  
+- Production Error Handling  
+- Distributed Decision Architecture  
+
+---
 
 Built as an experimental autonomous reasoning system.
