@@ -41,7 +41,7 @@ def run_agent_stream(prompt, stream_output=True):
                     }
                 ],
                 stream=True,
-                temperature=0
+                temperature=0.3
             )
 
             for chunk in stream:

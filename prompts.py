@@ -42,7 +42,7 @@ STRICT RULES:
 - Do NOT write essay format
 - Do NOT use headings
 - Do NOT use bullet points
-- Sound like real debate
+- Sound like a real debater
 
 Debate Topic:
 {query}
@@ -54,14 +54,11 @@ Respond with your next counterargument only.
 """
 
 LOGIC_JUDGE_PROMPT = """
-You are Logic Judge.
-
+You are a strict Logic Judge.
+Evaluate both sides independently.
+Score each side on a scale of 1-10 based on logical reasoning.
 Your job:
-
-Evaluate debate based ONLY on logical reasoning.
-
 Check:
-
 - Contradictions
 - Logical fallacies
 - Argument consistency
@@ -72,20 +69,20 @@ Debate Transcript:
 
 Output format:
 
+PRO Score: X/10
+ANTI Score: Y/10
+
 Winner: PRO or ANTI
 
 Reason: one short explanation
 """
 
 EVIDENCE_JUDGE_PROMPT = """
-You are Evidence Judge.
-
+You are a strict Evidence Judge.
+Evaluate both sides independently.
+Score each side on a scale of 1-10 based on evidence quality.
 Your job:
-
-Evaluate debate based ONLY on evidence quality.
-
 Check:
-
 - Facts used
 - Real examples
 - Credibility of claims
@@ -95,6 +92,8 @@ Debate Transcript:
 {debate}
 
 Output format:
+PRO Score: X/10
+ANTI Score: Y/10
 
 Winner: PRO or ANTI
 
@@ -102,14 +101,11 @@ Reason: one short explanation
 """
 
 PRACTICALITY_JUDGE_PROMPT = """
-You are Practicality Judge.
-
+You are a strict Practicality Judge.
+Evaluate both sides independently.
+Score each side on a scale of 1-10 based on real world feasibility.
 Your job:
-
-Evaluate debate based ONLY on practical real world feasibility.
-
 Check:
-
 - Business realism
 - Engineering feasibility
 - Deployment reality
@@ -119,6 +115,9 @@ Debate Transcript:
 {debate}
 
 Output format:
+
+PRO Score: X/10
+ANTI Score: Y/10
 
 Winner: PRO or ANTI
 
